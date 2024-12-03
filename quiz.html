@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wong Kar-Wai hongkongi filmrendező munkásságának, csodálatos világának a bemutatása">
+    <meta name="author" content="Velez Veronika">
+    <link rel="icon" type="image/icon" href="kepek/favicon/favicon.ico">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#myform").validate({
+            rules: {
+                nev: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                jelszo: {
+                    required: true,
+                    minlength: 8
+                },
+                telefonszam: {
+                    required: true,
+                    minlength:12
+                },
+                kedv_szin:{
+                    required:true
+                },
+                ananasz:{
+                    required:true
+                    },
+                szam: {
+                    required: true
+                },
+                vegso_check: {
+                required: true
+                },
+            },
+        messages: {
+            nev: "Kérlek add meg a neved!",
+            email: {
+                required: "Kérlek add meg az e-mail címed!",
+                email: "Kérlek érvényes e-mail címet adj meg!"
+            },
+            jelszo: {
+                required: "Kérlek adj meg egy jelszót!",
+                minlength: "A jelszónak legalább 8 karakter hosszúnak kell lennie!"
+            },
+            telefonszam: {
+                required: "Kérlek add meg a telefonszámod!",
+                pattern: "A telefonszám formátuma érvénytelen! pl. +36123456789"
+            },
+            szam: {
+                required: "Kérlek adj meg egy számot 1 és 5 között!"
+            },
+            kedv_szin: "Kérlek válassz egy színt!",
+            ananasz: "Kérlek válassz egy lehetőséget!",
+            vegso_check: "Kérlek fogadd el a szerződést!"
+        },
+    });
+});
+    </script>
+    <title>Wong Kar-Wai csodálatos világa</title>
+    <link href="film.css" rel="stylesheet">
+    <style>
+
+        label.error {
+        color: #34c339;
+       }
+    
+    </style>
+</head>
+<body>
+    <div class="qwrapper">
+    <header class="qhead" alt="Jelenet az In the mood for love című filmből" title="filmjelenet">
+        <h1> Wong Kar-Wai csodálatos világa</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="munkassaga.html">Munkássága</a></li>
+            <li><a  href="szineszek.html">Színészek</a></li>
+            <li><a  href="#">Quiz</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container_0">
+        <article class="qarticle">
+            
+            <h2>Melyik filmet ajánlom neked?</h2>
+            <h2>Töltsd ki és tudd meg!</h2>
+            
+            <p>Milyen a kapcsolatod a szerelemmel? <br><br>
+                <label><input type="radio" name="love" value="1">Egy lelki társra vágyom</label><br>
+                <label><input type="radio" name="love" value="2">Rejtélyesnek tartom</label><br>
+                <label><input type="radio" name="love" value="3">Nem tudom hiszek-e benne</label><br>
+                <label><input type="radio" name="love" value="4">Szerintem csodálatos dolog</label><br>
+            </p>
+            <p>Szoktad magányosnak érezni magad?<br><br>
+                <label><input type="radio" name="magany" value="1">Mindig</label><br>
+                <label><input type="radio" name="magany" value="2">Ritkán</label><br>
+                <label><input type="radio" name="magany" value="3">Túl gyakran</label><br>
+                <label><input type="radio" name="magany" value="4">Soha</label><br>
+            </p>
+            <p>Válassz egy színt!<br><br>
+                <label><input type="radio" name="szin" value="1">Sárga</label><br>
+                <label><input type="radio" name="szin" value="2">Vörös</label><br>
+                <label><input type="radio" name="szin" value="3">Zöld</label><br>
+                <label><input type="radio" name="szin" value="4">Kék</label><br>
+            </p>
+            <p>Le tudsz mondani az érzéseidről?<br><br>
+                <label><input type="radio" name="feels" value="1">Igen, de nem felejtem el őket soha</label><br>
+                <label><input type="radio" name="feels" value="2">Nagyon nehezen</label><br>
+                <label><input type="radio" name="feels" value="3">Persze, nem olyan fontosak</label><br>
+                <label><input type="radio" name="feels" value="4">Megteszek bármit, hogy ne kelljen</label><br>
+            </p>
+            <p>Leginkább milyen világba csöppennél bele?<br><br>
+                <label><input type="radio" name="world" value="1">Jazz, véletlen találkozások, elvágyódás</label><br>
+                <label><input type="radio" name="world" value="2">Esős nagyváros, meleg otthon, egy titok amit csak ti tudtok</label><br>
+                <label><input type="radio" name="world" value="3">Motorozás, neon fények, bérgyilkosok</label><br>
+                <label><input type="radio" name="world" value="4">Út az ismeretlenbe, lassú tánc, napsütés</label><br>
+            </p>
+            <p>Mennyire vagy szétszórt?<br><br>
+                <label><input type="radio" name="ditz" value="1">...csak egy picit</label><br>
+                <label><input type="radio" name="ditz" value="2">Egyáltalán nem!</label><br>
+                <label><input type="radio" name="ditz" value="3">Ennél szétszórtabb már nem is tudnék lenni</label><br>
+                <label><input type="radio" name="ditz" value="4">Próbálok egyben maradni</label><br>
+            </p>
+            <button class="qbtn" type="button" id="mybutton">Eredmény</button>
+        </article>
+        
+        <article class="qform">
+            <form id="myform" method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" novalidate>
+            <h2>Teleportálás adatlap</h2>
+            <p>
+            <label for="nev">Név: <input type="text" id="nev" name="nev" placeholder="Kalandor">
+            </label><br>
+            <label for="email">E-mail: <input type="email" id="email" name="email" placeholder="vakmero@gmail.com ">
+            </label><br>
+            <label for="jelszo">Jelszó: <input type="password" id="jelszo" name="jelszo" placeholder="Jelszó">
+            </label><br>
+            <label for="telefonszam">Telefonszám: <input type="tel" id="telefonszam" name="telefonszam" placeholder="+36" pattern="[+36][0-9]{9}">
+            </label><br>
+            <label for="szam" class="nostretch"><span class="nostretch">1-5-ig terjedő skálán mennyire tudsz motorozni?</span><input type="number" id="szam" name="szam" min="1" max="5">
+            </label><br>
+            <label for="kedv_szin">Válasszd ki a kedvenc színed:<input type="color" id="kedv_szin" name="kedv_szin" value="#ff0000">
+            </label><br>
+            <label for="ananasz" class="nostretch"><span class="nostretch">Szereted az ananászkonzervet?</span>
+            <select id="ananasz" name="ananasz">
+                <option value="igen">Igen</option>
+                <option value="nem">Nem</option>
+                <option value="lejart">Csak a lejártat</option>
+            </select></label><br>
+            <label for="vegso_check">Elolvastam a szerzodest <input type="checkbox" id="vegso_check" name="vegso_check">
+            </label><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            </p>
+            </form>
+        </article>
+    </main>
+
+    <div id="alert_box" class="alert_class">
+        <div class="alert_content">
+            <div class="message"></div>
+            <div class="buttons"> 
+                <button class="ok" id="okbtn">Igen</button>
+                <button class="nem">Nem</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>Ez az oldal csupán gyakorlás (*ᴗ͈ˬᴗ͈)ꕤ*.ﾟ </footer>
+    <script src="quizplus.js"></script>
+
+</div>
+</body>
+</html>
