@@ -2,7 +2,7 @@
 A webfejlesztés tárgy beadandója
 A webfejlesztés tárgy beadandója
 
-Oldal készítője: Velez Veronika Url cím:
+Oldal készítője: Velez Veronika Url cím: https://fancytunayou.github.io/webfejlesztes3/ 
 
 Rövid leírás: A weboldalon keresztül bemutatom az egyik kedvenc rendezőm, Wong Kar-Wai filmjeit, és ismertetem az azokban leggyakrabban szereplő színészeket. Egy quizt is ki lehet tölteni a lapon, ami megmondja melyik film illik/melyiket nézze meg a felhasználó.
 
